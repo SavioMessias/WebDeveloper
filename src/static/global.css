@@ -57,6 +57,13 @@ label + input {
 }
 
 @media(max-width: 650px) {
-
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border-top: solid 10px #7177a5;
+    }
 }
 
