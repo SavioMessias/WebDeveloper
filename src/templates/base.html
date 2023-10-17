@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/global.css">
+</head>
+<body>
+
+    <nav>
+        <img src="./static/assets/logo.png" alt="logo">
+        <ol>
+            <li>
+                <a href="/">Home | </a>
+                <a href="/about">About Us | </a>
+                <a href="/contacts">Contact </a>
+             </li>
+        </ol>
+    </nav>
+
+    {% block content %}
+        <!-- conteudo aqui -->
+    {% endblock %}
+
+    <footer>
+        <h3>Direitos Reservados.</h3>
+    </footer>
+</body>
+</html>
+
