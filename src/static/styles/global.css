@@ -1,0 +1,57 @@
+ @import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Noticia:wght@400;700&display=swap');
+
+* {
+    font-family: 'Poppins';
+    letter-spacing: .3px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+.text {
+    margin: 20px 80px;
+    text-align: justify;
+}
+
+p {
+    margin: 20px 0;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.img img {
+    width: 100%; 
+    height: 80vh;
+    object-fit: cover; 
+}
+
+.contacts {
+    margin: 20px 20px;
+}
+
+form {
+    width: 300px;
+    margin-left:  80px;
+}
+
+label + input {
+    margin-top: 80px;
+}
+
+@media(max-width: 650px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border-top: solid 10px #7177a5;
+    }
+}
+
