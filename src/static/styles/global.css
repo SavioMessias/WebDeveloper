@@ -1,7 +1,7 @@
  @import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Noticia:wght@400;700&display=swap');
 
 * {
-    font-family: 'Poppins';
+    font-family: 'AR One Sans', sans-serif;
     letter-spacing: .3px;
     margin: 0;
     padding: 0;
@@ -54,4 +54,3 @@ label + input {
         border-top: solid 10px #7177a5;
     }
 }
-

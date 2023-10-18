@@ -50,8 +50,8 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #eee;
-  background-color: #021229;
+  color: #021229;
+  background-color: #eee;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -3903,7 +3903,7 @@ textarea.form-control-lg {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #0d6efd;
+  background-color: #f8f8f8;
 }
 
 .nav-fill > .nav-link,
@@ -3962,9 +3962,12 @@ textarea.form-control-lg {
   font-size: 1.25rem;
   text-decoration: none;
   white-space: nowrap;
+  color: white;
+  z-index: 1;
 }
 .navbar-brand:hover {
   transform: scale(0.98);
+  color: #fff;
 }
 .navbar-nav {
   display: flex;
@@ -3991,6 +3994,8 @@ textarea.form-control-lg {
   flex-grow: 1;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  position: absolute;
 }
 
 .navbar-toggler {
