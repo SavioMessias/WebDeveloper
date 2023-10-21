@@ -35,22 +35,14 @@ footer {
     margin: 20px 20px;
 }
 
-form {
-    width: 300px;
-    margin-left:  80px;
-}
 
-label + input {
-    margin-top: 80px;
-}
 
-@media(max-width: 650px) {
+@media(max-width: 680px) {
     nav {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 20px;
-        border-top: solid 10px #7177a5;
     }
 }

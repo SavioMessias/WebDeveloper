@@ -4,16 +4,22 @@
 {% block content %}
     <div class="text">
         <h1>Entre em contato</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium iusto, quibusdam dicta ullam repellat libero.</p>
+        <p>
+            Ficamos ansiosos para ouvir de você! Entre em contato conosco para mais informações sobre treinos, inscrições ou quaisquer outras dúvidas que possa ter. Estamos aqui para ajudar você a fazer parte da nossa incrível jornada no mundo do vôlei!
+        </p>
     </div>
 
-    <form>
-        <label for="email">Seu E-mail:</label><br>
-        <input type="email" name="email" id="email"><br>
-        <label for="assunto">Assunto:</label><br>
-        <input type="text" name="assunto" id="assunto"><br>
-        <label for="desc">Descrição:</label>
-        <textarea name="desc" id="desc" cols="30" rows="10"></textarea>
-    </form>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Seu E-mail</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@exemplo.com">
+      </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Assunto</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Texto:</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
 
 {% endblock %}

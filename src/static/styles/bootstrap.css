@@ -44,7 +44,14 @@
   }
 }
 
+main {
+  flex-grow: 1;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   margin: 0;
   font-family: var(--bs-font-sans-serif);
   font-size: 1rem;
@@ -429,6 +436,11 @@ legend + * {
   -webkit-appearance: button;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #021229;
+}
 output {
   display: inline-block;
 }
@@ -601,6 +613,7 @@ progress {
   padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
   margin-left: auto;
+  background-color: #021229;
 }
 
 @media (min-width: 576px) {
@@ -610,22 +623,22 @@ progress {
 }
 @media (min-width: 768px) {
   .container-md, .container-sm, .container {
-    max-width: 720px;
+    max-width: 100%;
   }
 }
 @media (min-width: 992px) {
   .container-lg, .container-md, .container-sm, .container {
-    max-width: 960px;
+    max-width: 100%;
   }
 }
 @media (min-width: 1200px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1140px;
+    max-width: 100%;
   }
 }
 @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1320px;
+    max-width: 100%;
   }
 }
 .row {
@@ -2122,6 +2135,7 @@ progress {
 }
 .form-label {
   margin-bottom: 0.5rem;
+  margin-left: 80px;
 }
 
 .col-form-label {
@@ -2152,7 +2166,7 @@ progress {
 
 .form-control {
   display: block;
-  width: 100%;
+  width: 80%;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   font-weight: 400;
@@ -2166,6 +2180,8 @@ progress {
   appearance: none;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin-left: 80px;
+  
 }
 @media (prefers-reduced-motion: reduce) {
   .form-control {
@@ -3942,6 +3958,16 @@ textarea.form-control-lg {
   background-color: #021229;
   border-bottom: 1px solid #ffcf20;
 }
+
+@media(max-width: 800px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
 .navbar > .container,
 .navbar > .container-fluid,
 .navbar > .container-sm,
@@ -5746,6 +5772,24 @@ textarea.form-control-lg {
   position: relative;
 }
 
+.carousel-img {
+  height: 500px;
+  object-fit: cover;
+  object-position: 100% 25%;
+}
+
+.carousel-img2 {
+  height: 500px;
+  object-fit: cover;
+  object-position: 25% 55%;
+}
+
+.carousel-img3 {
+  height: 500px;
+  object-fit: cover;
+  object-position: 100% -25%px;
+}
+
 .carousel.pointer-event {
   touch-action: pan-y;
 }
@@ -5936,6 +5980,8 @@ textarea.form-control-lg {
   padding-bottom: 1.25rem;
   color: #fff;
   text-align: center;
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 7px;
 }
 
 .carousel-dark .carousel-control-prev-icon,
@@ -7348,6 +7394,8 @@ textarea.form-control-lg {
 }
 
 /* rtl:end:remove */
+
+
 .text-primary {
   color: #0d6efd !important;
 }
@@ -7361,7 +7409,7 @@ textarea.form-control-lg {
 }
 
 .text-info {
-  color: #0dcaf0 !important;
+  color: #ffcf20 !important;
 }
 
 .text-warning {

@@ -6,6 +6,12 @@
     {%block title%}{% endblock %}
     <link rel="stylesheet" href="../static/styles/bootstrap.css">
     <link rel="stylesheet" href="../static/styles/global.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" > 
     <script src="../static/js/bootstrap.bundle.js"></script>
 </head>
 <body>
@@ -35,12 +41,55 @@
         </div>
       </nav>
 
-    {% block content %}
-        <!-- conteudo aqui -->
-    {% endblock %}
 
-    <footer>
-        <h3>Direitos Reservados.</h3>
+      <main>
+        {% block content %}
+          <!-- conteudo aqui -->
+        {% endblock %}
+      </main>
+    
+
+    <footer class="text-center text-white" style="background-color: #f1f1f1;">
+      <!-- Grid container -->
+      <div class="container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Instagram -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-info m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-instagram"></i
+          ></a>
+    
+          <!-- Linkedin -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-info m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <!-- Github -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-info m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-dark" href="https://mdbootstrap.com/">Savio Messias</a>
+      </div>
+      <!-- Copyright -->
     </footer>
 </body>
 </html>
