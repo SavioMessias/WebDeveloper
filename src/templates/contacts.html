@@ -9,17 +9,21 @@
         </p>
     </div>
 
-    <div class="mb-3">
+    <form action="/contacts" method="post" class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Seu E-mail</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@exemplo.com">
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@exemplo.com"
+        name="email">
       </div>
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Assunto</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Assunto" name="assunto">
     </div>
     <div class="mb-3">
         <label for="exampleFormControlTextarea1" class="form-label">Texto:</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="descricao"></textarea>
     </div>
+    <div class="mb-3">
+        <input type="submit"></input>
+    </form>
 
 {% endblock %}
